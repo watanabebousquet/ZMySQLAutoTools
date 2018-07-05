@@ -1,0 +1,42 @@
+---
+#---------------------ZMySQLAutotools全局配置文件---------------------
+# section 1 #ZMySQLAutotools所在的目录
+mtls_base_dir: /usr/local/ZMySQLAutoTools/
+#           #mysqltool自带的各类软件的安装文件所在路径(相对路径)
+mtls_packages: packages/
+#           #mysqltool自带的python脚本、下发到被控主机时所保存的路径
+mtls_client_base_dir: /usr/local/
+
+
+#是否给mysql用户加密码
+mtls_make_mysql_secure: 1
+mtls_with_php: 1
+
+#### mysql 相关的配置
+
+#mysql 安装包所在的目录
+mysql_packages_dir: /usr/local/ZMySQLAutoTools/packages/mysql 
+#mysql 安装包
+mysql_package: mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+#linux 系统级别mysql用户相关信息
+mysql_user: mysql
+mysql_group: mysql
+mysql_user_uid: 3306
+mysql_user_gid: 3306
+#mysql 软件安装目录
+mysql_base_dir: /usr/local/mysql/
+#mysql 数据目录
+mysql_data_dir_base: /data/mysqldata/
+mysql_port: 3306
+mysql_root_password: zsd@7101
+mysql_zabbix_password: zsd@7101
+mysql_rple_user: repl
+mysql_rple_password: repl@7101
+mysql_mha_user: mha
+mysql_mha_password: mha@7101
+mysql_app_user: appuser
+mysql_app_password: appuser@7101
+mysql_monitor_user: monitor
+mysql_monitor_password: monitor@7101
+mysql_backup_user: backuper
+mysql_backup_password: backuper@7101

@@ -25,7 +25,7 @@
    host_53          |10.1.11.53               |被控客户端   |
 
 ### 解压ZMySQLAutoTools
-+**解压ZMySQLAutoTools安装包至/usr/local目录中**
++ **解压ZMySQLAutoTools安装包至/usr/local目录中**
 **1):获得ZMySQLAutoTools安装包**
 ```bash
 cd /tmp/

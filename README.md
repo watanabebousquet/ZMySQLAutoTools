@@ -26,6 +26,7 @@
 
 ### 解压ZMySQLAutoTools
 + **解压ZMySQLAutoTools安装包至/usr/local目录中**
+
 **1):获得ZMySQLAutoTools安装包**
 ```bash
 cd /tmp/

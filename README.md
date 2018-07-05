@@ -140,6 +140,7 @@ host_52 | SUCCESS => {
 ### 自动化单实例MySQL部署
 ### yaml文件配置修改
 由于MySQL的tar.gz过大，所以手动get到指定目录。并且修改几个yaml，完成一键式部署mysql。
+
 **1):下载MySQL 5.7二进制部署包**
 ```bash
 cd /tmp/

@@ -2,7 +2,7 @@
 
 作者：**张盛东**
 
-目标：**自动化构建部署MySQL数据库，一键式备份，监控，主从集群部署等。以及jdk，tomcat，nginx等基础中间件的自动化部署安装及运维。**
+目标：自动化构建部署MySQL数据库，一键式单实例mysql安装，备份，监控，主从集群部署等。以及jdk，tomcat，nginx等基础中间件的自动化部署安装及运维。
 
 ---
 ### 手册目录
@@ -25,6 +25,17 @@
    host_53          |10.1.11.53               |被控客户端   |
 
 ### 解压ZMySQLAutoTools
++**解压ZMySQLAutoTools安装包至/usr/local目录中**
+**1):获得ZMySQLAutoTools安装包**
+```bash
+cd /tmp/
+wget https://github.com/zhangshengdong/ZMySQLAutoTools/archive/master.zip
+```
+**2):解压ZMySQLAutoTools安装包**
+```bash
+unzip master
+mv ZMySQLAutoTools-master /usr/local/ZMySQLAutoTools
+```
 
 ### python3.x安装
 在ZMySQLAutoTools/packages/python/目录下，有相关的python安装包，通过 installPython.sh 安装部署

@@ -17,6 +17,8 @@
 -  [自动化单实例MySQL部署](#自动化单实例MySQL部署)
    - [yaml文件配置修改](#yaml文件配置修改)
    - [一键单实例MySQL部署](#一键单实例MySQL部署)
+-  [自动化JDK部署](#自动化JDK部署)
+   - [一键JDK部署](#一键JDK部署)
 
 ### 环境准备
 本实验为：4台虚拟机，操作系统为:Centos 6.8(6以上均可)
@@ -180,4 +182,29 @@ owners.
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
 (root@localhost) [(none)]> 
+```
+### 自动化JDK部署
+由于jdk的tar.gz过大，所以手动get到指定目录。完成一键式部署mysql。
+
+**1):下载jdk二进制部署包**
+```bash
+cd /tmp/
+wget http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz?AuthParam=1530858537_77f33399f6ce9ab51001f33725ea49a2
+```
+**2): MySQL 5.7二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/mysql目录下**
+```bash
+mv /tmp/jdk-8u171-linux-x64.tar.gz /usr/local/ZMySQLAutoTools/packages/java
+```
+
+### 一键JDK部署
+```bash
+ansible-playbook install_jdk.yaml
+```
+
++ **测试jdk版本**
+```bash
+[root@MHA-Manager java]# java -version
+java version "1.8.0_171"
+Java(TM) SE Runtime Environment (build 1.8.0_171-b11)
+Java HotSpot(TM) 64-Bit Server VM (build 25.171-b11, mixed mode)
 ```

@@ -18,7 +18,7 @@
   - [yaml文件配置修改](#yaml文件配置修改)
   - [一键单实例MySQL部署](#一键单实例MySQL部署)
 - [自动化JDK部署](#自动化JDK部署)
-  - [1.一键JDK部署](#1.一键JDK部署)
+  - [一键JDK部署](#一键JDK部署)
 ###  环境准备
 本实验为：4台虚拟机，操作系统为:Centos 6.8(6以上均可)
 
@@ -194,7 +194,7 @@ wget http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac1
 mv /tmp/jdk-8u171-linux-x64.tar.gz /usr/local/ZMySQLAutoTools/packages/java
 ```
 
-### 1.一键JDK部署
+### 一键JDK部署
 ```bash
 ansible-playbook install_jdk.yaml
 ```

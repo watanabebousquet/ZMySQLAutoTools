@@ -40,3 +40,9 @@ mysql_monitor_user: monitor
 mysql_monitor_password: monitor@7101
 mysql_backup_user: backuper
 mysql_backup_password: backuper@7101
+
+#java相关配置
+#java安装包所在的目录
+java_packages_dir: /usr/local/ZMySQLAutoTools/packages/java
+#java 安装包
+java_package: jdk-8u171-linux-x64.tar.gz

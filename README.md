@@ -7,19 +7,20 @@
 此文档：完成一键式单实例mysql安装功能，可以完成批量标准化部署MySQL单实例。用于测试，开发以及生产环境。
 
 ---
-### 目录
+## 目录
 - [安装 ZMySQLAutoTools](#安装ZMySQLAutoTools)
   - [环境准备](#环境准备)
   - [解压ZMySQLAutoTools](#解压ZMySQLAutoTools)
-  - [python3.x安装](#python3.x安装)
+  - [python3安装](#python3安装)
   - [ansible安装](#ansible安装)
   - [配置ansible](#配置ansible)
-- [自动化单实例MySQL部署](#自动化单实例MySQL部署)
-  - [yaml文件配置修改](#yaml文件配置修改)
-  - [一键单实例MySQL部署](#一键单实例MySQL部署)
-- [自动化JDK部署](#自动化JDK部署)
-  - [一键JDK部署](#一键JDK部署)
-###  环境准备
+-  [自动化单实例MySQL部署](#自动化单实例MySQL部署)
+   - [yaml文件配置修改](#yaml文件配置修改)
+   - [一键单实例MySQL部署](#一键单实例MySQL部署)
+-  [自动化JDK部署](#自动化JDK部署)
+   - [一键JDK部署](#一键JDK部署)
+
+### 环境准备
 本实验为：4台虚拟机，操作系统为:Centos 6.8(6以上均可)
 
    **主机名**     | **ip地址**         | **备注**   |
@@ -28,6 +29,7 @@
    host_51          | 10.1.11.51     |被控客户端   |
    host_52          |10.1.11.52               |被控客户端   |
    host_53          |10.1.11.53               |被控客户端   |
+
 
 ### 解压ZMySQLAutoTools
 
@@ -42,7 +44,7 @@ unzip master
 mv ZMySQLAutoTools-master /usr/local/ZMySQLAutoTools
 ```
 
-### python3.x安装
+### python3安装
 在ZMySQLAutoTools/packages/python/目录下，有相关的python安装包，通过 installPython.sh 安装部署
 ```bash
 # yum install -y libselinux-python
@@ -189,7 +191,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 cd /tmp/
 wget http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz?AuthParam=1530858537_77f33399f6ce9ab51001f33725ea49a2
 ```
-**2): jdk二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/java目录下**
+**2): MySQL 5.7二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/mysql目录下**
 ```bash
 mv /tmp/jdk-8u171-linux-x64.tar.gz /usr/local/ZMySQLAutoTools/packages/java
 ```

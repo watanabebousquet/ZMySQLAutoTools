@@ -1,0 +1,13 @@
+---
+ - hosts: test
+   remote_user: root
+   become_user: yes
+   vars_files:
+    - ../../config.yaml
+   tasks:
+    - name: install jdk to /usr/local/
+      import_tasks: common/install_jdk_to_usr.yaml
+
+    - name: initialize env variable
+      import_tasks: common/initialize_env_var.yaml
+...

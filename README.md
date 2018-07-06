@@ -189,7 +189,7 @@ Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 cd /tmp/
 wget http://download.oracle.com/otn-pub/java/jdk/8u171-b11/512cd62ec5174c3487ac17c61aaa89e8/jdk-8u171-linux-x64.tar.gz?AuthParam=1530858537_77f33399f6ce9ab51001f33725ea49a2
 ```
-**2): MySQL 5.7二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/mysql目录下**
+**2): jdk二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/java目录下**
 ```bash
 mv /tmp/jdk-8u171-linux-x64.tar.gz /usr/local/ZMySQLAutoTools/packages/java
 ```

@@ -1,1 +1,2 @@
 dummy file
+java安装包需要下载至本地目录。

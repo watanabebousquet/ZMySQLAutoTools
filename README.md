@@ -47,7 +47,6 @@ mv ZMySQLAutoTools-master /usr/local/ZMySQLAutoTools
 ### python3安装
 在ZMySQLAutoTools/packages/python/目录下，有相关的python安装包，通过 installPython.sh 安装部署
 ```bash
-# yum install -y libselinux-python
 # cd /usr/local/ZMySQLAutoTools/packages/python/
 # bash installPython.sh
 ```

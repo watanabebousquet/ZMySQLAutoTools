@@ -6,6 +6,8 @@
 
 此文档：完成一键式单实例mysql安装功能，可以完成批量标准化部署MySQL单实例。用于测试，开发以及生产环境。
 
+环境:在CentOS 6.9验证
+
 ---
 ## 目录
 - [安装 ZMySQLAutoTools](#安装ZMySQLAutoTools)
@@ -104,6 +106,11 @@ ssh-copy-id root@10.1.11.51
 ssh-copy-id root@10.1.11.52
 ssh-copy-id root@10.1.11.53
 ```
+非22端口的，互信
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub -p 9900 root@172.30.200.200
+```
+
 3):测试ansible是否成功
 ```bash
 举例命令:

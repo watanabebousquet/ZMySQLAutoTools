@@ -154,7 +154,7 @@ Python 3.7.4
 **1):下载MySQL 5.7二进制部署包**
 ```bash
 cd /tmp/
-wget https://cdn.mysql.com//Downloads/MySQL-5.7/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
+https://downloads.mysql.com/archives/get/file/mysql-5.7.22-linux-glibc2.12-x86_64.tar.gz
 ```
 **2): MySQL 5.7二进制部署包放置到/usr/local/ZMySQLAutoTools/packages/mysql目录下**
 ```bash

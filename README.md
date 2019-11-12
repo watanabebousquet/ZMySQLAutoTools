@@ -138,6 +138,15 @@ host_52 | SUCCESS => {
 }
 ```
 
+### 备注
+如果ansible被控客户端有错误，可能是服务器的python版本过高，可以做个链接，如下:
+```shell
+cd /usr/bin/
+ln -s python3.7 python
+[root@server3 bin]# ./python --version
+Python 3.7.4
+```
+
 ### 自动化单实例MySQL部署
 ### yaml文件配置修改
 由于MySQL的tar.gz过大，所以手动get到指定目录。并且修改yaml文件，完成一键式部署mysql。

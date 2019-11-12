@@ -3,7 +3,7 @@
 
 #1.install python-about packages
 
-sudo yum -y install gcc gcc-c++ libffi libyaml-devel libffi-devel zlib zlib-devel openssl openssl-devel libyaml sqlite-devel libxml2 libxslt-devel libxml2-devel
+sudo yum -y install gcc gcc-c++ libffi libyaml-devel libffi-devel zlib zlib-devel openssl openssl-devel libyaml sqlite-devel libxml2 libxslt-devel libxml2-devel make
 
 #2.install python 
 

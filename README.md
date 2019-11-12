@@ -98,6 +98,11 @@ host_51 ansible_user=root ansible_host=10.1.11.51
 host_52 ansible_user=root ansible_host=10.1.11.52
 host_53 ansible_user=root ansible_host=10.1.11.53
 ```
+非22端口的，host配置
+```bash
+host_200 ansible_user=root ansible_host=172.30.200.200 ansible_ssh_port=9900
+```
+
 2):配置主控机与被控机之间的ssh信任
 ```bash
 ssh-keygen
